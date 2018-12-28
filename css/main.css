@@ -59,9 +59,19 @@ body {
 }
 
 ol, ul {
+/*
   margin: 0;
   padding: 0;
   list-style: none;
+*/
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;;
+  
 }
 
 select {
@@ -3308,7 +3318,7 @@ genric-btn:hover {
 }
 
 .contact-page-area {
-  background: #f9f9ff;
+  background: #ffffff;
 }
 
 .contact-page-area .map-wrap {
