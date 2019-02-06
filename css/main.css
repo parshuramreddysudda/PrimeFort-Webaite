@@ -1991,7 +1991,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-top .menu-top-right span {
   color: #fff;
-  padding: 28px;
   font-size: 18px;
   font-weight: 700;
   margin-left: 10px;
@@ -2393,7 +2392,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #000000;
 }
 hr{
-   border-color: rgba(0,0,0,.8);
+       border-top: 1px solid #eee;
 }
 
 .overlay {
@@ -2849,7 +2848,6 @@ genric-btn:hover {
 }
 
 .booking-right .btn {
-  background-color: #000000;
   color: #fff;
   font-size: 14px;
   text-transform: capitalize;
@@ -3318,7 +3316,7 @@ genric-btn:hover {
 }
 
 .contact-page-area {
-  background: #ffffff;
+  background: #f9f9ff;
 }
 
 .contact-page-area .map-wrap {
@@ -3752,7 +3750,10 @@ genric-btn:hover {
   border: none;
   background: #f9f9ff;
 }
+#sid1{
+  display: grid;grid-template-columns: 60% 30%;
 
+}
 /*
 ################
                End Blog Details  Page style

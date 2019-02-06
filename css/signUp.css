@@ -45,16 +45,17 @@
 }
 
 .send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 380px;
-  overflow: hidden;
+    margin-top: 15px;
+    height: 34px;
+    width: 350px;
+    overflow: hidden;
     background-color: black;
-  transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-left: 25px;
 }
 
 .button {
-  width: 380px;
+  width: 400px;
   height: 34px;
   transition: all .2s ease-in-out;
 }
@@ -62,7 +63,7 @@
 .send-text {
   display: block;
   margin-top: 5px;
-  font: 200 1px 'Poppins', sans-serif;
+  font: 300 14px 'Poppins', sans-serif;
   letter-spacing: 2px;
 }
 
