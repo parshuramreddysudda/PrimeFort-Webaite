@@ -59,7 +59,7 @@
 
    
     <header id="header">
-        <div class="container">
+        <div class="container" onmousemove="serviceRemovedFunc()">
             <div class="row header-top align-items-center">
                 <div class="col-lg-4 col-sm-4 menu-top-left">
                     <a href="mailto:info@primefort.net"><span class="lnr lnr-location" style="color:black"></span></a>
@@ -76,22 +76,124 @@
                 </div>
             </div>
         </div>
-        <hr style="border-color: rgba(0,0,0,.8);">
+        <hr style="border-color: rgba(0,0,0,.8);" onmousemove="serviceRemovedFunc()">
         <div class="container">
             <div class="row align-items-center justify-content-center d-flex">
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li class="menu-active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li class="menu-active"  onmousemove="serviceRemovedFunc()"><a href="index.html">Home</a></li>
+                        <li><a href="about.html"  onmousemove="serviceRemovedFunc()">About</a></li>
+                      <li id="serviceHide"><a href="service.html" id='serviceHover' onmousemove="serviceHoveredFunc()"  >Service</a></li>	
+    
+
+                        <li id="serviceTitleSide"><a style="color: #ffffff">Service</a></li>
+                                 
+      
+                             <li class="menu-has-children" id="auditing"><a href="" style="margin-left: 7%;">&nbsp;&nbsp;&nbsp;Auditing and Assignment</a>
+				            <ul>
+				              <li><a href="RedTeam.html">Red Team Assesment</a></li>
+				              <li><a href="SecureCode.html">Secure Source Code Auditing</a></li>
+                              <li><a href="databaseAssesment.html">Database Assesment</a></li>
+				              <li><a href="webServicesManagement.html">Web Services management</a></li>
+                                  
+				            </ul>
+				          </li>
+ 
+                             <li class="menu-has-children" id="pentesting"><a href="" style="margin-left: 7%;">Penetration Testing </a>
+				            <ul>
+				              <li><a href="webApplication.html">Web Application Pentesting</a></li>
+				              <li><a href="cloudApplication.html">Cloud Application Pentesting</a></li>
+                              <li><a href="mobileApplication.html">Mobile Application  Pentesting</a></li>
+                              <li><a href="networkPentesting.html">Network Penetration Testing</a></li>
+                              <li><a href="VoIpPentesting.html">VoIP Penetration Testing</a></li>
+                                
+				            </ul>
+				          </li>
+                            
+                             <li class="menu-has-children" id='secure'  ><a href="" style="margin-left: 7%;">Security as Service</a>
+				            <ul>
+				              <li><a href="applicationSecurity.html">Application Secuirty</a></li>
+				              <li><a href="dataSecurity.html">Data Security  </a></li>
+                            
+                                
+				            </ul>
+				          </li>
+                            
+                        <li  onmousemove="serviceRemovedFunc()"><a href="gallery.html" >Gallery</a></li>
+                        <li  onmousemove="serviceRemovedFunc()"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav><!-- #nav-menu-container -->
             </div>
         </div>
-    </header><!-- #header -->
+    </header>
+    <!-- #header -->
 
+    
+    
+     <div class="modal-body card" id="serviceHovered" onmousemove="serviceHoveredFunc()" onmouseout="serviceRemovedFunc()" style="z-index: 99999999; top: 130px;display: none;b ox-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
+    border: 1px solid #EEE;
+    border-top: 2px solid #161616;position: fixed;margin: 0 12%;">
+					<div class="row card-body">
+						<div class="col-md-4 border-right">
+							<div class="row">
+								<div class="col">
+									<h4 class="card-title"><img src="img/services/tick.png" style="max-height: 30px;">  Auditing &amp; Assesment</h4>
+								</div>
+							</div>
+							<div class="row">
+								<a href="RedTeam.html" id='serviceLinks'><div class="col"><label class="col-form-label">Red Team Assesment</label></div></a>
+							</div>
+							<div class="row">
+									<a href="SecureCode.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Secure Source Code Auditing</label></div></a>
+							</div>
+							<div class="row">
+									<a href="databaseAssesment.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Database Assesment</label></div></a>
+							</div>
+							<div class="row">
+									<a href="webServicesManagement.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Web Services management</label></div></a>
+							</div>
+						</div>
+						<div class="col-md-4 border-right">
+							<div class="row">
+								<div class="col">
+								<a><h4 class="card-title"><img src="img/services/magnify.png" style="max-height: 30px;">  Penetration Testing</h4>
+                                    </a></div>
+							</div>
+							<div class="row">
+									<a href="webApplication.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Web Application Pentesting</label></div></a>
+							</div>
+							<div class="row">
+									<a href="cloudApplication.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Cloud Application Pentesting</label></div></a>
+							</div>
+							<div class="row">
+									<a href="mobileApplication.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Mobile Application  Pentesting</label></div></a>
+							</div>
+							<div class="row">
+									<a href="networkPentesting.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Network Penetration Testing</label></div></a>
+							</div>
+							<div class="row">
+									<a href="VoIpPentesting.html"  id='serviceLinks'><div class="col"><label class="col-form-label">VoIP Penetration Testing</label></div></a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col">
+									<a href="#"><h4 class="card-title"><img src="img/services/sheild.png" style="max-height: 30px;">  Security as a Service</h4></a>
+								</div>
+							</div>
+							<div class="row">
+									<a href="applicationSecurity.html" id='serviceLinks'><div class="col"><label class="col-form-label">Application Secuirty</label></div></a>
+							</div>
+							<div class="row">
+									<a href="dataSecurity.html" id='serviceLinks'><div class="col"><label class="col-form-label">Data Security</label></div></a>
+							</div>
+							 
+							 
+						</div>
+					</div>
+				</div>
+            
+            
     <!-- start banner Area -->
     <section class="banner-area relative" id="home">
         <div class="overlay overlay-bg"></div>
@@ -232,5 +334,7 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/mail-script.js"></script>
     <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/Navi.css">
+            <script src="js/Navi.js"></script>
 </body>
 	</html>
