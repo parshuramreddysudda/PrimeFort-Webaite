@@ -1,48 +1,81 @@
-/* adds some margin below the link sets  */
-.navbar .dropdown-menu div[class*="col"] {
-   margin-bottom:1rem;
-}
-
-.navbar .dropdown-menu {
-  border:none;
-  background-color:#0060c8!important;
-}
-
-/* breakpoint and up - mega dropdown styles */
-@media screen and (min-width: 992px) {
-  
-  /* remove the padding from the navbar so the dropdown hover state is not broken */
-.navbar {
-  padding-top:0px;
-  padding-bottom:0px;
-}
-
-/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
-.navbar .nav-item {
-  padding:.5rem .5rem;
-  margin:0 .25rem;
-}
-
-/* makes the dropdown full width  */
-.navbar .dropdown {position:static;}
-
-.navbar .dropdown-menu {
-  width:100%;
-  left:0;
-  right:0;
-/*  height of nav-item  */
-  top:45px;
-}
-  
-  /* shows the dropdown menu on hover */
-.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
-  display:block!important;
-}
-  
-  .navbar .dropdown-menu {
-    border: 1px solid rgba(0,0,0,.15);
-    background-color: #fff;
+          
+@media screen and (max-width: 960px) 
+{
+  #serviceHide 
+    {
+   display: none;   
   }
+    
+                      
+}
+               
+@media screen and (min-width: 960px) 
+{
+  #serviceShowSide 
+    {
+   display: block;   
+  }
+           #auditing
+    {
+       display: none;
+    }
+            #pentesting
+    {
+      display: none;
+    }
+    #secure{
+       display: none;
+        
+    }
+    
+    #serviceTitleSide{
+        display: none;
+    }
+                      
+}             
+       
 
+#serviceHovered
+{
+display:none;
 }
 
+#serviceLinks:hover
+{
+	  width: 100%;
+	background:#f2f2f2;
+    border-radius: 6px;
+	color: red;
+  
+	font:bold;
+	margin-left: 15px;	
+	cursor: pointer; 
+	}
+	#serviceLinks
+{
+	
+	 
+	color:#222;
+}
+
+.pghd {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 20px;
+/*    background-image: url(images/tit.png);*/
+    background-size: 220px;
+    background-position: top 10px;
+    background-repeat: repeat-x;
+    background-color: #fff
+}
+
+.pghd .pghdtit {
+     
+    text-transform: capitalize;
+    color: #0f1719;
+    font-weight: bold;
+    letter-spacing: normal;
+    /*margin-top: 1.0em*/
+	margin-top:15px;
+}
+	

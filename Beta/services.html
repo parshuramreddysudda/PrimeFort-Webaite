@@ -58,31 +58,64 @@
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li class="menu-active" onmousemove="serviceRemovedFunc()"><a href="index.html">Home</a></li>
-				          <li><a href="about.html" onmousemove="serviceRemovedFunc()">About</a></li>
-				          <li><a href="service.html" id='serviceHover' onmousemove="serviceHoveredFunc()"  >Service</a></li>				          
+				          <li><a href="about.html" onmousemove="serviceRemovedFunc()" >About</a></li>
+				          <li id="serviceHide"><a href="service.html" id='serviceHover' onmousemove="serviceHoveredFunc()"  >Service</a></li>	
+    
+
+                        <li id="serviceTitleSide"><a style="color: #ffffff">Service</a></li>
+                                 
+      
+                             <li class="menu-has-children" id="auditing"><a href="" style="margin-left: 7%;">&nbsp;&nbsp;&nbsp;Auditing and Assignment</a>
+				            <ul>
+				              <li><a href="blog-home.html">Red Team Assesment</a></li>
+				              <li><a href="blog-single.html">Secure Source Code Auditing</a></li>
+                                 <li><a href="blog-home.html">Database Assesment</a></li>
+				              <li><a href="blog-single.html">Web Services management</a></li>
+                                  
+				            </ul>
+				          </li>
+ 
+                             <li class="menu-has-children" id="pentesting"><a href="" style="margin-left: 7%;">Penetration Testing </a>
+				            <ul>
+				              <li><a href="blog-home.html">Web Application Pentesting</a></li>
+				              <li><a href="blog-single.html">Cloud Application Pentesting</a></li>
+                                   <li><a href="blog-single.html">Mobile Application  Pentesting</a></li>
+                                   <li><a href="blog-single.html">Network Penetration Testing</a></li>
+                                   <li><a href="blog-single.html">VoIP Penetration Testing</a></li>
+                                
+				            </ul>
+				          </li>
+                            
+                             <li class="menu-has-children" id='secure'  ><a href="" style="margin-left: 7%;">Security as Service</a>
+				            <ul>
+				              <li><a href="blog-home.html">Application Secuirty</a></li>
+				              <li><a href="blog-single.html">Data Security  </a></li>
+                                 <li><a href="blog-single.html">Database Assesment  </a></li>
+                                 <li><a href="blog-single.html">Web Services management  </a></li>
+                                
+				            </ul>
+				          </li>
+                            
+                          
+                         
+                            
 				          <li><a href="training.html" onmousemove="serviceRemovedFunc()">training</a></li>
 				          <li><a href="events.html" onmousemove="serviceRemovedFunc()">events</a></li>
 						  <li><a href="pricing.html" onmousemove="serviceRemovedFunc()" >Pricing</a></li>
-
-				          <li class="menu-has-children"><a href="">Blog</a>
-				            <ul>
-				              <li><a href="blog-home.html">Blog Home</a></li>
-				              <li><a href="blog-single.html">Blog Single</a></li>
-				            </ul>
-				          </li>
-				          <li><a href="contact.html">Contact</a></li>
-				          <li><a href="elements.html">Elements</a></li>
+ 
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
 			    </div>
 			  </header><!-- #header -->
-			  <div class="container card" id="serviceHovered" onmousemove="serviceHoveredFunc()" onmouseout="serviceRemovedFunc()" style="z-index: 30; top: 130px;display: none;">
+			  <div class="modal-body card" id="serviceHovered" onmousemove="serviceHoveredFunc()" onmouseout="serviceRemovedFunc()" style="z-index: 99999999; top: 110px;display: none;b ox-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
+    border: 1px solid #EEE;
+    border-top: 2px solid #161616;position: fixed;margin: 0 12%;">
 					<div class="row card-body">
 						<div class="col-md-4 border-right">
 							<div class="row">
 								<div class="col">
-									<h4 class="card-title"><i class="fa fa-user-secret"></i>Auditing &amp; Assesment</h4>
+									<h4 class="card-title"><i class="fa fa-user-secret"></i>  Auditing &amp; Assesment</h4>
 								</div>
 							</div>
 							<div class="row">
@@ -101,7 +134,7 @@
 						<div class="col-md-4 border-right">
 							<div class="row">
 								<div class="col">
-								<a><h4 class="card-title"><i class="fa fa-user-secret"></i>Penetration Testing</h4>
+								<a><h4 class="card-title"><i class="fa fa-user-shield"></i>Penetration Testing</h4>
                                     </a></div>
 							</div>
 							<div class="row">
@@ -157,235 +190,77 @@
 			</section>
 			<!-- End banner Area -->	
 			<!-- Start home-about Area -->
-			<section class="home-about-area section-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 home-about-left">
-							<img class="mx-auto d-block img-fluid" src="img/about-img.png" alt="">
-						</div>
-						<div class="col-lg-6 home-about-right">
-							<h6 class="text-uppercase">Brand new app to blow your mind</h6>
-							<h1>We’ve made a life <br>
-							that will change you</h1>
-							<p>
-								<span>We are here to listen from you deliver exellence</span>
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.
-							</p>
-							<a class="primary-btn" href="#">Get Started Now</a>
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End home-about Area -->
-
-			<!-- Start feature Area -->
-			<section class="feature-area relative pt-100 pb-20">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row align-items-center justify-content-center">
-						<div class="col-lg-4 col-md-6">
-							<div class="single-feature">
-								<a href="#"><h4 class="text-white">Expert Technicians</h4></a>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-feature">
-								<a href="#"><h4 class="text-white">Professional Service</h4></a>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-feature">
-								<a href="#"><h4 class="text-white">Great Support</h4></a>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>	
-						<div class="col-lg-4 col-md-6">
-							<div class="single-feature">
-								<a href="#"><h4 class="text-white">Technical Skills</h4></a>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-feature">
-								<a href="#"><h4 class="text-white">Highly Recomended</h4></a>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-feature">
-								<a href="#"><h4 class="text-white">Positive Reviews</h4></a>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>
-							</div>
-						</div>																		
-					</div>
-				</div>	
-			</section>
-			<!-- End feature Area -->			
-
-			<!-- Start about-video Area -->
-			<section class="about-video-area section-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 about-video-left">
-							<h6 class="text-uppercase">Brand new app to blow your mind</h6>
-							<h1>
-								We’ve made a life <br>
-								that will change you 
-							</h1>
-							<p>
-								<span>We are here to listen from you deliver exellence</span>
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmo d tempor incididunt ut labore et dolore magna aliqua.
-							</p>
-							<a class="primary-btn" href="#">Get Started Now</a>
-						</div>
-						<div class="col-lg-6 about-video-right justify-content-center align-items-center d-flex">
-							<a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid mx-auto" src="img/play.png" alt=""></a>
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End about-video Area -->			
-			
-			<!-- Start booking Area -->
-			<section class="booking-area section-gap relative" id="consultancy">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row justify-content-between align-items-center">
-						<div class="col-lg-6 col-md-6 booking-left">
-							<div class="active-review-carusel">
-								<div class="single-carusel">
-									<img src="img/r1.png" alt="">
-									<div class="title justify-content-start d-flex">
-										<h4>Fannie Rowe</h4>
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</div>
-									</div>
-									<p>
-										Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-									</p>
-									<img src="img/r2.png" alt="">
-									<div class="title justify-content-start d-flex">
-										<h4>Hulda Sutton</h4>
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</div>
-									</div>
-									<p>
-										Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-									</p>									
-								</div>
-								<div class="single-carusel">
-									<img src="img/r1.png" alt="">
-									<div class="title justify-content-start d-flex">
-										<h4>Fannie Rowe</h4>
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</div>
-									</div>
-									<p>
-										Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-									</p>
-									<img src="img/r2.png" alt="">
-									<div class="title justify-content-start d-flex">
-										<h4>Hulda Sutton</h4>
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</div>
-									</div>
-									<p>
-										Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-									</p>									
-								</div>
-								<div class="single-carusel">
-									<img src="img/r1.png" alt="">
-									<div class="title justify-content-start d-flex">
-										<h4>Fannie Rowe</h4>
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</div>
-									</div>
-									<p>
-										Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-									</p>
-									<img src="img/r2.png" alt="">
-									<div class="title justify-content-start d-flex">
-										<h4>Hulda Sutton</h4>
-										<div class="star">
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star checked"></span>
-											<span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</div>
-									</div>
-									<p>
-										Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-									</p>									
-								</div>																
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 booking-right">
-								<h4 class="mb-20">Appointment Form</h4>
-								<form action="#">
-									<input class="form-control" type="text" name="name" placeholder="Your name" required>
-									<input class="form-control" type="email" name="email" placeholder="Email Address" required>
-									<input class="form-control" type="text" name="phone" placeholder="Phone Number" required>
-									<div class="input-group dates-wrap">                                          
-										<input id="datepicker" class="dates form-control" id="exampleAmount" placeholder="Date & time" type="text">                        
-										<div class="input-group-prepend">
-											<span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
-										</div>											
-									</div>
-									<textarea class="common-textarea form-control mt-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'"></textarea>
-									<button  class="btn btn-default btn-lg btn-block text-center">Book Now!</button>
-								</form>
-						</div>
-					</div>
-				</div>	
-			</section>
+            <section class="pghd">
+<div class="container clearfix">
+<div class="row" style="">
+<div class="col-md-7" style="">
+<a href="../../services/auditing.php">
+<h1 class="pghdtit">AUDITING &amp; ASSESSMENT</h1>
+</a>
+</div>
+<div class="col-md-5 hidden-xs hidden-sm pull-right" style="margin-left: 0px; padding-top: -10px;">
+<div class="row">
+<div class="col-md-4 center">
+<a style="color: black;" href="../auditing/secure-source-code-auditing.php">
+<img src="img/services/Code%20Auditing.png" width="48px;">
+<p class="sertit">Secure Source Code Auditing</p>
+</a>
+</div>
+<div class="col-md-4 center">
+<a href="database-assessment.php" style="color: black;">
+<img src="img/services/database-assessment.png" width="48px;">
+<p class="sertit">Database
+                                        <br>Assessment
+                                    </p>
+</a>
+</div>
+<div class="col-md-4 center">
+<a style="color: black;" href="web-services-assessment.php">
+<img src="img/services/OAuth%20&%20API%20Testing.png" width="48px;">
+<p class="sertit">Web Services
+                                        <br>Assessment
+                                    </p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
           
-			<!-- End booking Area -->
-
-			<!-- start footer Area -->		
+			<!-- End home-about Area -->
+<div class="container">
+    <h3 style="padding-bottom: 20px;">Red Team Assessment - Simulating a real world cyber attack on your Enterprise!<br /></h3>
+    <h4 class="card-title">About Red Team Assessment<br /></h4>
+    <p class="card-body">Enterprise security requires a robust approach to be able to address any kind of potential risk a business might experience. Red Team Assessment offers a customized approach to assess the readiness of an enterprise during security attacks on its critical
+        business functions.</p>
+    <h4>Why Red Team Assessment?</h4>
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"><strong>Objective Definition Phase</strong></h4>
+                <p class="card-text">Initial understanding of the business domain and objectives. The Red Team experts compile a list of potential threats that are relevant to the enterprise’s domain. Based on the objectives, attacks will be simulated for assessment.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"><strong>Assessment Phase</strong></h4>
+                <p class="card-text">Initial understanding of the business domain and objectives. The Red Team experts compile a list of potential threats that are relevant to the enterprise’s domain. Based on the objectives, attacks will be simulated for assessment.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"><strong>Reporting Phase</strong></h4>
+                <p class="card-text">Initial understanding of the business domain and objectives. The Red Team experts compile a list of potential threats that are relevant to the enterprise’s domain. Based on the objectives, attacks will be simulated for assessment.</p>
+            </div>
+        </div>
+    </div>
+    <h4>Why Red Team Assessment?</h4>
+</div>
+		 
+ 
+            
+<!-- start footer Area -->		
 			<footer class="footer-area section-gap">
 				<div class="container">
 					<div class="row">
@@ -448,32 +323,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 			</footer>	
 			<!-- End footer Area -->
-<style>
-
-#serviceHovered
-{
-display:none;
-}
-
-#serviceLinks:hover
-{
-	
-	background:transparent;
-	color: red;
-	font:bold;
-	margin-left: 15px;	
-	cursor: pointer; 
-	}
-	#serviceLinks
-{
-	
-	 
-	color:#222;
-	 
-	}	
-			
-</style>
-
+ 
 <script>
 
 // $(document).ready(function()
@@ -507,24 +357,8 @@ display:none;
 // });
 
 
- function serviceHoveredFunc()
- {
-	document.getElementById("serviceHovered").style.transition = "all 2s";
-	 document.getElementById('serviceHovered').style.display='block';
-
-	 document.getElementById('home').style.marginTop='-10%';
-
-	
- }
-
-   function serviceRemovedFunc()
- { 
-	document.getElementById("serviceHovered").style.transition = "all 2s";
-	 document.getElementById('serviceHovered').style.display='none';
-	 document.getElementById('home').style.marginTop='0%';
-	
- }
-		</script>
+    
+            </script>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>			
@@ -542,7 +376,9 @@ display:none;
 			<script src="js/waypoints.min.js"></script>
 			<script src="js/jquery.counterup.min.js"></script>			
 			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+			<script src="js/main.js"></script>
+            <link rel="stylesheet" href="css/Navi.css">
+            <script src="js/Navi.js"></script>
 			<script>
 			
 		
