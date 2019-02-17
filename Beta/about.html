@@ -34,9 +34,19 @@
     <link rel="stylesheet" href="css/Team-Clean.css">
     <link rel="stylesheet" href="css/Team-Grid.css">
     <link rel="stylesheet" href="css/Team-with-rotating-cards.css">
-<!--	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <!--	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.js"></script>
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="febeef21-45dc-42cc-a71f-eb26b04fa019";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script type="text/javascript">
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "febeef21-45dc-42cc-a71f-eb26b04fa019";
+        (function() {
+            d = document;
+            s = d.createElement("script");
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+    </script>
 </head>
 
 <body>
@@ -69,46 +79,46 @@
             <div class="row align-items-center justify-content-center d-flex">
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li class="menu-active"  onmousemove="serviceRemovedFunc()"><a href="index.html">Home</a></li>
-                        <li><a href="about.html"  onmousemove="serviceRemovedFunc()">About</a></li>
-                      <li id="serviceHide"><a href="#" id='serviceHover' onmousemove="serviceHoveredFunc()"  >Service</a></li>	
-    
+                        <li class="menu-active" onmousemove="serviceRemovedFunc()"><a href="index.html">Home</a></li>
+                        <li><a href="about.html" onmousemove="serviceRemovedFunc()">About</a></li>
+                        <li id="serviceHide"><a href="#" id='serviceHover' onmousemove="serviceHoveredFunc()">Service</a></li>
+
 
                         <li id="serviceTitleSide"><a style="color: #ffffff">Service</a></li>
-                                 
-      
-                             <li class="menu-has-children" id="auditing"><a href="" style="margin-left: 7%;">&nbsp;&nbsp;&nbsp;Auditing and Assignment</a>
-				            <ul>
-				              <li><a href="RedTeam.html">Red Team Assesment</a></li>
-				              <li><a href="SecureCode.html">Secure Source Code Auditing</a></li>
-                              <li><a href="databaseAssesment.html">Database Assesment</a></li>
-				              <li><a href="webServicesManagement.html">Web Services management</a></li>
-                                  
-				            </ul>
-				          </li>
- 
-                             <li class="menu-has-children" id="pentesting"><a href="" style="margin-left: 7%;">Penetration Testing </a>
-				            <ul>
-				              <li><a href="webApplication.html">Web Application Pentesting</a></li>
-				              <li><a href="cloudApplication.html">Cloud Application Pentesting</a></li>
-                              <li><a href="mobileApplication.html">Mobile Application  Pentesting</a></li>
-                              <li><a href="networkPentesting.html">Network Penetration Testing</a></li>
-                              <li><a href="VoIpPentesting.html">VoIP Penetration Testing</a></li>
-                                
-				            </ul>
-				          </li>
-                            
-                             <li class="menu-has-children" id='secure'  ><a href="" style="margin-left: 7%;">Security as Service</a>
-				            <ul>
-				              <li><a href="applicationSecurity.html">Application Secuirty</a></li>
-				              <li><a href="dataSecurity.html">Data Security  </a></li>
-                            
-                                
-				            </ul>
-				          </li>
-                            
-                        <li  onmousemove="serviceRemovedFunc()"><a href="gallery.html" >Gallery</a></li>
-                        <li  onmousemove="serviceRemovedFunc()"><a href="contact.html">Contact</a></li>
+
+
+                        <li class="menu-has-children" id="auditing"><a href="" style="margin-left: 7%;">&nbsp;&nbsp;&nbsp;Auditing and Assignment</a>
+                            <ul>
+                                <li><a href="RedTeam.html">Red Team Assesment</a></li>
+                                <li><a href="SecureCode.html">Secure Source Code Auditing</a></li>
+                                <li><a href="databaseAssesment.html">Database Assesment</a></li>
+                                <li><a href="webServicesManagement.html">Web Services management</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="menu-has-children" id="pentesting"><a href="" style="margin-left: 7%;">Penetration Testing </a>
+                            <ul>
+                                <li><a href="webApplication.html">Web Application Pentesting</a></li>
+                                <li><a href="cloudApplication.html">Cloud Application Pentesting</a></li>
+                                <li><a href="mobileApplication.html">Mobile Application Pentesting</a></li>
+                                <li><a href="networkPentesting.html">Network Penetration Testing</a></li>
+                                <li><a href="VoIpPentesting.html">VoIP Penetration Testing</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="menu-has-children" id='secure'><a href="" style="margin-left: 7%;">Security as Service</a>
+                            <ul>
+                                <li><a href="applicationSecurity.html">Application Secuirty</a></li>
+                                <li><a href="dataSecurity.html">Data Security </a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li onmousemove="serviceRemovedFunc()"><a href="gallery.html">Gallery</a></li>
+                        <li onmousemove="serviceRemovedFunc()"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav><!-- #nav-menu-container -->
             </div>
@@ -116,72 +126,97 @@
     </header>
     <!-- #header -->
 
-    
-    
-     <div class="modal-body card" id="serviceHovered" onmousemove="serviceHoveredFunc()" onmouseout="serviceRemovedFunc()" style="z-index: 99999999; top: 130px;display: none;b ox-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
+
+
+    <div class="modal-body card" id="serviceHovered" onmousemove="serviceHoveredFunc()" onmouseout="serviceRemovedFunc()" style="z-index: 99999999; top: 130px;display: none;b ox-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
     border: 1px solid #EEE;
     border-top: 2px solid #161616;position: fixed;margin: 0 12%;">
-					<div class="row card-body">
-						<div class="col-md-4 border-right">
-							<div class="row">
-								<div class="col">
-									<h4 class="card-title"><img src="img/services/tick.png" style="max-height: 30px;">  Auditing &amp; Assesment</h4>
-								</div>
-							</div>
-							<div class="row">
-								<a href="RedTeam.html" id='serviceLinks'><div class="col"><label class="col-form-label">Red Team Assesment</label></div></a>
-							</div>
-							<div class="row">
-									<a href="SecureCode.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Secure Source Code Auditing</label></div></a>
-							</div>
-							<div class="row">
-									<a href="databaseAssesment.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Database Assesment</label></div></a>
-							</div>
-							<div class="row">
-									<a href="webServicesManagement.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Web Services management</label></div></a>
-							</div>
-						</div>
-						<div class="col-md-4 border-right">
-							<div class="row">
-								<div class="col">
-								<a><h4 class="card-title"><img src="img/services/magnify.png" style="max-height: 30px;">  Penetration Testing</h4>
-                                    </a></div>
-							</div>
-							<div class="row">
-									<a href="webApplication.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Web Application Pentesting</label></div></a>
-							</div>
-							<div class="row">
-									<a href="cloudApplication.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Cloud Application Pentesting</label></div></a>
-							</div>
-							<div class="row">
-									<a href="mobileApplication.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Mobile Application  Pentesting</label></div></a>
-							</div>
-							<div class="row">
-									<a href="networkPentesting.html"  id='serviceLinks'><div class="col"><label class="col-form-label">Network Penetration Testing</label></div></a>
-							</div>
-							<div class="row">
-									<a href="VoIpPentesting.html"  id='serviceLinks'><div class="col"><label class="col-form-label">VoIP Penetration Testing</label></div></a>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="row">
-								<div class="col">
-									<a href="#"><h4 class="card-title"><img src="img/services/sheild.png" style="max-height: 30px;">  Security as a Service</h4></a>
-								</div>
-							</div>
-							<div class="row">
-									<a href="applicationSecurity.html" id='serviceLinks'><div class="col"><label class="col-form-label">Application Secuirty</label></div></a>
-							</div>
-							<div class="row">
-									<a href="dataSecurity.html" id='serviceLinks'><div class="col"><label class="col-form-label">Data Security</label></div></a>
-							</div>
-							 
-							 
-						</div>
-					</div>
-				</div>
-            
-            <!-- #header -->
+        <div class="row card-body">
+            <div class="col-md-4 border-right">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="card-title"><img src="img/services/tick.png" style="max-height: 30px;"> Auditing &amp; Assesment</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="RedTeam.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Red Team Assesment</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="SecureCode.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Secure Source Code Auditing</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="databaseAssesment.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Database Assesment</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="webServicesManagement.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Web Services management</label></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 border-right">
+                <div class="row">
+                    <div class="col">
+                        <a>
+                            <h4 class="card-title"><img src="img/services/magnify.png" style="max-height: 30px;"> Penetration Testing</h4>
+                        </a></div>
+                </div>
+                <div class="row">
+                    <a href="webApplication.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Web Application Pentesting</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="cloudApplication.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Cloud Application Pentesting</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="mobileApplication.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Mobile Application Pentesting</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="networkPentesting.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Network Penetration Testing</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="VoIpPentesting.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">VoIP Penetration Testing</label></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col">
+                        <a href="#">
+                            <h4 class="card-title"><img src="img/services/sheild.png" style="max-height: 30px;"> Security as a Service</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="applicationSecurity.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Application Secuirty</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="dataSecurity.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Data Security</label></div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- #header -->
 
     <!-- start banner Area -->
     <section class="banner-area relative" id="home">
@@ -233,102 +268,107 @@
         })
     </script>
     <section class="home-about-area section-gap">
-        <div class="container w3-animate-zoom" >
+        <div class="container w3-animate-zoom">
             <div class="row">
                 <div class="col-lg-6 home-about-left">
-				<div class="container" style="position: relative;">
-                    <img class="mx-auto d-block img-fluid" style="object-fit:cover;"  src="img/primefort/bricks-brickwall-indoors-112811.jpg" alt="">
-					<h1>
-                        <section class="w3-hide-small w3-hide-medium">
-                            <p><span id="typeLoopabout2" style="font-family: Poppins ; position: absolute;    padding-left: 20px; width: 80%;   top: 150px;
+                    <div class="container" style="position: relative;">
+                        <img class="mx-auto d-block img-fluid" style="object-fit:cover;" src="img/primefort/bricks-brickwall-indoors-112811.jpg" alt="">
+                        <h1>
+                            <section class="w3-hide-small w3-hide-medium">
+                                <p><span id="typeLoopabout2" style="font-family: Poppins ; position: absolute;    padding-left: 20px; width: 80%;   top: 150px;
 left: 60px; color:black; font-weight: 50; font-weight:bold; line-height:1em"></span></p>
-                        </section>
+                            </section>
 
 
-                        <script>
-                            window.instance = new TypeIt('#typeLoopabout2', {
-                                speed: 30,
-                                strings: [
-                                    "PrimeFort's Vision, Missions and Goals are Primarily Intended by the contemporary Cyber-Security conditions of India."
-                                ],
-                                breakLines: false,
-                                showCursor: false
-                            })
-                        </script>
-                    </h1>
+                            <script>
+                                window.instance = new TypeIt('#typeLoopabout2', {
+                                    speed: 30,
+                                    strings: [
+                                        "PrimeFort's Vision, Missions and Goals are Primarily Intended by the contemporary Cyber-Security conditions of India."
+                                    ],
+                                    breakLines: false,
+                                    showCursor: false
+                                })
+                            </script>
+                        </h1>
+                    </div>
                 </div>
-				</div>
                 <div class="col-lg-6 home-about-right ">
 
 
-                    <h2 class="w3-animate-opacity w3-black"> <center><strong>Goals of PrimeFort</strong></center></h2><br>
+                    <h2 class="w3-animate-opacity w3-black">
+                        <center><strong>Goals of PrimeFort</strong></center>
+                    </h2><br>
                     <style>
-					.mySlides {display:none;}
+                        .mySlides {display:none;}
 					</style>
                     <!--<hny style="font-family: Poppins; font-weight: 500">
                         <div >
                             <ul class="unordered-list" style="font-family: Poppins;font-size: px;font-weight: 500;">-->
-							<div class="w3-content w3-card-4" style="width:100% border-style: solid;"><br>
-								<div class="mySlides w3-container w3-animate-fading">
-                                <p  style=" text-align: center; font-size:15px; color:black;"><br>
-								<span style="font-size:50px;line-height:0.2em;opacity:0.2"></span><br>
-								<i>To wind up the world's chief scholarly research focus in cybersecurity and protection, tending to the real specialized and approaching difficulties.
-								</i>
-								<br><br>
-                                </p>
-								<p style=" text-align: center; font-size:15px; color:black;"><i> To wind up the principal decision for the administration, business, and open media needing imaginative research, specialized bits of knowledge, and strategy direction about cybersecurity and security.</i></p><br>
-								<center><span style="text-align:right; font-size:50px;line-height:0.2em;opacity:0.2">&#10078;</span></center>
-								</div>
+                    <div class="w3-content w3-card-4" style="width:100% border-style: solid;"><br>
+                        <div class="mySlides w3-container w3-animate-fading">
+                            <p style=" text-align: center; font-size:15px; color:black;"><br>
+                                <span style="font-size:50px;line-height:0.2em;opacity:0.2"></span><br>
+                                <i>To wind up the world's chief scholarly research focus in cybersecurity and protection, tending to the real specialized and approaching difficulties.
+                                </i>
+                                <br><br>
+                            </p>
+                            <p style=" text-align: center; font-size:15px; color:black;"><i> To wind up the principal decision for the administration, business, and open media needing imaginative research, specialized bits of knowledge, and strategy direction about cybersecurity and security.</i></p><br>
+                            <center><span style="text-align:right; font-size:50px;line-height:0.2em;opacity:0.2">&#10078;</span></center>
+                        </div>
 
-								<div class="mySlides w3-container w3-animate-fading "><i>
+                        <div class="mySlides w3-container w3-animate-fading "><i>
                                 <p style=" text-align: center; font-size:15px; color:black;"><br>
-								<span style="font-size:50px;line-height:0.2em;opacity:0.2">&#10077;</span><br>
-								To instruct and train the future pioneers of cybersecurity and security in the scholarly world, government, and industry.<br><br> </p>
-								<p style=" text-align: center; font-size:15px; color:black;"> To be an impetus of the data security industry in Georgia through joint research ventures with organizations and in addition fruitful new businesses by Georgia Tech employees and graduates. </p><br>
-								<center><span style="text-align:right; font-size:50px;line-height:0.2em;opacity:0.2">&#10078;</span></center><br></i>
-								</div>
-							</div>
+                                    <span style="font-size:50px;line-height:0.2em;opacity:0.2">&#10077;</span><br>
+                                    To instruct and train the future pioneers of cybersecurity and security in the scholarly world, government, and industry.<br><br> </p>
+                                <p style=" text-align: center; font-size:15px; color:black;"> To be an impetus of the data security industry in Georgia through joint research ventures with organizations and in addition fruitful new businesses by Georgia Tech employees and graduates. </p><br>
+                                <center><span style="text-align:right; font-size:50px;line-height:0.2em;opacity:0.2">&#10078;</span></center><br>
+                            </i>
+                        </div>
+                    </div>
 
                     <!--          </ul>
                       </div>
                     </hny>-->
-					<script>
-						var slideIndex = 0;
-						carousel();
+                    <script>
+                        var slideIndex = 0;
+                        carousel();
 
-						function carousel() {
-							var i;
-							var x = document.getElementsByClassName("mySlides");
-							for (i = 0; i < x.length; i++) {
-							x[i].style.display = "none";
-							}
-							slideIndex++;
-							if (slideIndex > x.length) {slideIndex = 1}
-							x[slideIndex-1].style.display = "block";
-							setTimeout(carousel, 9000);
-}
-					</script>
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > x.length) {
+                                slideIndex = 1
+                            }
+                            x[slideIndex - 1].style.display = "block";
+                            setTimeout(carousel, 9000);
+                        }
+                    </script>
                 </div>
             </div>
             <div>
                 <br>
                 <div class="container section-top-border">
-						 
-						<div class="row">
-							<div class="col-md-6 border-right">
-								<div class="single-defination">
-									<h4 class="mb-20" style="text-align: center;color: red;font-size: 24px;">Vision Of PrimeFort</h4>
-									<p class="text-justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Considering Cyber security, In this real world, Cybersecurity isn't a series of text boxes or radio buttons. where as to secure them. This is an execution challenge. Having no Magical tool or method for the immediate cyber security practices, we from primefort as a responsible Indian based cyber security startup, we assemble strong Red and blue teams to address contemporary and future cyber security and privacy challenges which are being faced by the Government and private enterprises in various sectors by engaging all the freelance hackers, cyber security professionals.</p>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="single-defination">
-									<h4 class="mb-20" style="text-align: center;color: red;font-size: 24px;">Missions of Primefort</h4>
-									<p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Identifying and addressing the challenges being faced by the current generation enterprises, the teams within Primefort would work accordingly upon the sector by one-on-one engagements with projects to address their specific challenges; education, outreach, and training to raise the state of security practice across the scientific enterprise; and leadership on bringing the best and most relevant cybersecurity research and educate and train students and professionals through degree and life-long learning programs.</p>
-								</div>
-							</div>
-						</div>
-					</div>
+
+                    <div class="row">
+                        <div class="col-md-6 border-right">
+                            <div class="single-defination">
+                                <h4 class="mb-20" style="text-align: center;color: red;font-size: 24px;">Vision Of PrimeFort</h4>
+                                <p class="text-justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Considering Cyber security, In this real world, Cybersecurity isn't a series of text boxes or radio buttons. where as to secure them. This is an execution challenge. Having no Magical tool or method for the immediate cyber security practices, we from primefort as a responsible Indian based cyber security startup, we assemble strong Red and blue teams to address contemporary and future cyber security and privacy challenges which are being faced by the Government and private enterprises in various sectors by engaging all the freelance hackers, cyber security professionals.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-defination">
+                                <h4 class="mb-20" style="text-align: center;color: red;font-size: 24px;">Missions of Primefort</h4>
+                                <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Identifying and addressing the challenges being faced by the current generation enterprises, the teams within Primefort would work accordingly upon the sector by one-on-one engagements with projects to address their specific challenges; education, outreach, and training to raise the state of security practice across the scientific enterprise; and leadership on bringing the best and most relevant cybersecurity research and educate and train students and professionals through degree and life-long learning programs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
             </div>
@@ -545,8 +585,8 @@ left: 60px; color:black; font-weight: 50; font-weight:bold; line-height:1em"></s
         <div style="">
             <div class="container" style="margin-top: 10px;">
 
-               
-               <h2 class="text-center" style="font-size:46px;font-weight:bolder; color:white;"><a href="index.html"><img class="img-fluid" style="max-width: 220px;" src="img/primefort/prime%20fort_White-01.png"></a></h2>
+
+                <h2 class="text-center" style="font-size:46px;font-weight:bolder; color:white;"><a href="index.html"><img class="img-fluid" style="max-width: 220px;" src="img/primefort/prime%20fort_White-01.png"></a></h2>
                 <hr />
                 <ul class="list-inline" id="text_decoration" style="margin-top:0px;font-family:Poppins, sans-serif;text-align: center;">
                     <li class="list-inline-item"><a href="index.html" class="decoration" style="color:white;font-size:15px;margin-right:10px;">Home</a></li>
@@ -585,7 +625,7 @@ left: 60px; color:black; font-weight: 50; font-weight:bold; line-height:1em"></s
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/mail-script.js"></script>
     <script src="js/main.js"></script>
-        <link rel="stylesheet" href="css/Navi.css">
-            <script src="js/Navi.js"></script>
+    <link rel="stylesheet" href="css/Navi.css">
+    <script src="js/Navi.js"></script>
 </body>
 	</html>
