@@ -1258,6 +1258,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 100%;
   line-height: 40px;
+    border-radius: 30px;
   border: none;
   outline: none;
   background: #f9f9ff;
@@ -1852,7 +1853,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-select .nice-select .list .option {
-  font-weight: 300;
+  font-weight: 400;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1865,11 +1866,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-select .nice-select .list .option.selected {
   color: #000000;
-  background: transparent;
+/*  background: transparent;*/
 }
 
 .form-select .nice-select .list .option:hover {
   color: #000000;
+    font-size: 15px;
+    margin-left: 7px;
+    overflow: hidden;
   background: transparent;
 }
 
@@ -2261,7 +2265,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #000000;
+  color: #ffffff;
 }
 
 #mobile-body-overly {

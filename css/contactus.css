@@ -54,7 +54,7 @@ body{
 input:focus{
     outline: none;
     border-color: #000000;
-    box-shadow:0 0 10px blue;
+    box-shadow:0 0 2px black;
 }
 .center-justified {
   text-align: justify;

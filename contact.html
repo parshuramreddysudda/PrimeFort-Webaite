@@ -18,7 +18,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/contactus.css">
-<!--	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <!--	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
     <!-- Site Title -->
     <title>Primefort - Securing Innovations.</title>
 
@@ -57,9 +57,9 @@
 
 <body>
 
-   
+
     <header id="header">
-        <div class="container">
+        <div class="container" onmousemove="serviceRemovedFunc()">
             <div class="row header-top align-items-center">
                 <div class="col-lg-4 col-sm-4 menu-top-left">
                     <a href="mailto:info@primefort.net"><span class="lnr lnr-location" style="color:black"></span></a>
@@ -76,21 +76,148 @@
                 </div>
             </div>
         </div>
-        <hr style="border-color: rgba(0,0,0,.8);">
+        <hr style="border-color: rgba(0,0,0,.8);" onmousemove="serviceRemovedFunc()">
         <div class="container">
             <div class="row align-items-center justify-content-center d-flex">
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li class="menu-active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li class="menu-active" onmousemove="serviceRemovedFunc()"><a href="index.html">Home</a></li>
+                        <li><a href="about.html" onmousemove="serviceRemovedFunc()">About</a></li>
+                        <li id="serviceHide"><a href="#" id='serviceHover' onmousemove="serviceHoveredFunc()">Service</a></li>
+
+
+                        <li id="serviceTitleSide"><a style="color: #ffffff">Service</a></li>
+
+
+                        <li class="menu-has-children" id="auditing"><a href="" style="margin-left: 7%;">&nbsp;&nbsp;&nbsp;Auditing and Assignment</a>
+                            <ul>
+                                <li><a href="RedTeam.html">Red Team Assesment</a></li>
+                                <li><a href="SecureCode.html">Secure Source Code Auditing</a></li>
+                                <li><a href="databaseAssesment.html">Database Assesment</a></li>
+                                <li><a href="webServicesManagement.html">Web Services management</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="menu-has-children" id="pentesting"><a href="" style="margin-left: 7%;">Penetration Testing </a>
+                            <ul>
+                                <li><a href="webApplication.html">Web Application Pentesting</a></li>
+                                <li><a href="cloudApplication.html">Cloud Application Pentesting</a></li>
+                                <li><a href="mobileApplication.html">Mobile Application Pentesting</a></li>
+                                <li><a href="networkPentesting.html">Network Penetration Testing</a></li>
+                                <li><a href="VoIpPentesting.html">VoIP Penetration Testing</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="menu-has-children" id='secure'><a href="" style="margin-left: 7%;">Security as Service</a>
+                            <ul>
+                                <li><a href="applicationSecurity.html">Application Secuirty</a></li>
+                                <li><a href="dataSecurity.html">Data Security </a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li onmousemove="serviceRemovedFunc()"><a href="gallery.html">Gallery</a></li>
+                        <li onmousemove="serviceRemovedFunc()"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav><!-- #nav-menu-container -->
             </div>
         </div>
-    </header><!-- #header -->
+    </header>
+    <!-- #header -->
+
+
+
+    <div class="modal-body card" id="serviceHovered" onmousemove="serviceHoveredFunc()" onmouseout="serviceRemovedFunc()" style="z-index: 99999999; top: 130px;display: none;b ox-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
+    border: 1px solid #EEE;
+    border-top: 2px solid #161616;position: fixed;margin: 0 12%;">
+        <div class="row card-body">
+            <div class="col-md-4 border-right">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="card-title"><img src="img/services/tick.png" style="max-height: 30px;"> Auditing &amp; Assesment</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="RedTeam.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Red Team Assesment</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="SecureCode.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Secure Source Code Auditing</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="databaseAssesment.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Database Assesment</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="webServicesManagement.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Web Services management</label></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 border-right">
+                <div class="row">
+                    <div class="col">
+                        <a>
+                            <h4 class="card-title"><img src="img/services/magnify.png" style="max-height: 30px;"> Penetration Testing</h4>
+                        </a></div>
+                </div>
+                <div class="row">
+                    <a href="webApplication.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Web Application Pentesting</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="cloudApplication.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Cloud Application Pentesting</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="mobileApplication.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Mobile Application Pentesting</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="networkPentesting.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Network Penetration Testing</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="VoIpPentesting.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">VoIP Penetration Testing</label></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col">
+                        <a href="#">
+                            <h4 class="card-title"><img src="img/services/sheild.png" style="max-height: 30px;"> Security as a Service</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="applicationSecurity.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Application Secuirty</label></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="dataSecurity.html" id='serviceLinks'>
+                        <div class="col"><label class="col-form-label">Data Security</label></div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
 
     <!-- start banner Area -->
     <section class="banner-area relative" id="home">
@@ -135,77 +262,96 @@
     <section class="contact-page-area section-gap">
         <div class="container">
             <div class="row">
-<!--            <div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>-->
-                <div class="mapouter" style="align-content: center"><div class="gmap_canvas"><iframe width="100%" height="445" id="gmap_canvas" src="https://maps.google.com/maps?q=Primefort&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">wordpress themes by crocothemes.net</a></div><style>.mapouter{text-align:center;height:445px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:445px;width:100%;}</style></div>
-
-                
-        <section id="contact">
-            <div class="container contact-form">
-                <div class="contact-image">
-                    <img src="img/elements/rocket_contact.png" alt="rocket_contact" />
+                <!--            <div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>-->
+                <div class="mapouter" style="align-content: center">
+                    <div class="gmap_canvas"><iframe width="100%" height="445" id="gmap_canvas" src="https://maps.google.com/maps?q=Primefort&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href=" ">wordpress themes by crocothemes.net</a></div>
+                    <style>.mapouter{text-align:center;height:445px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:445px;width:100%;}</style>
                 </div>
-                <form method="post">
-                    <h3>Drop Us a Message</h3>
-                    <div class="row">
-                        <div class="col-md-6 col-xs-12">
-                            <div class="form-group">
-                                <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-                            </div>
-                            <div class="form-group">
-                               
-                            </div>
-                            <div class="form-group w3-hide-small w3-hide-medium">
-                                <span class="w3-hide-small w3-hide-medium"><input type="submit" name="btnSubmit" class="btnContact w3-hide-small w3-hide-medium" value="Send Message" /></span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12">
-                            <div class="form-group">
-                                <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-                            </div>
-							<div class="form-group w3-hide-large"><center>
-                                <input type="submit" name="btnSubmit" class="btnContact w3-center" value="Send" />
-                            </div></center>
-                        </div>
-                    </div><br><br><br><br><hr><br><br>
-					<center>
-                        <span class="contact-text place w3-hide-small w3-hide-medium" style="color: rgb(0,0,0,0.6);letter-spacing: 0px; display: inline;"><i class="fa fa-map-marker fa-2x"></i>&nbsp;Muthialpet, Pondicherry</span>
-                    
-                        <span class="contact-text phone w3-hide-small w3-hide-medium"><a href="tel:+91 90471 40793"
-                                        title="Give us a call" style="color:  rgb(0,0,0,0.6);letter-spacing: 0px"><i class="fa fa-phone fa-2x"></i>&nbsp;&nbsp;+91 90471 40793</a></span>
-                    
-                        <span class="contact-text gmail w3-hide-small w3-hide-medium"><a href="mailto:info@primefort.net"
-                                        title="Send me an email" style="color:  rgb(0,0,0,0.6);letter-spacing: 0px"><i class="fa fa-envelope fa-2x"></i>&nbsp;&nbsp;info@primefort.net</a></span>
-                    </center>
-                    <center>
-                        <span class="contact-text place w3-hide-large" style="color: rgb(0,0,0,0.6);letter-spacing: 0px; display: inline;"><center><i class="fa fa-map-marker fa-2x"></i></center><br><center>Muthialpet, Pondicherry</center></span>
-                    
-                        <span class="contact-text phone w3-hide-large"><a href="tel:+91 90471 40793"
-                                        title="Give us a call" style="color:  rgb(0,0,0,0.6);letter-spacing: 0px"><center><i class="fa fa-phone fa-2x"></i></center><br><center>+91 90471 40793</center></a></span>
-                    
-                        <span class="contact-text gmail w3-hide-large"><a href="mailto:info@primefort.net"
-                                        title="Send me an email" style="color:  rgb(0,0,0,0.6);letter-spacing: 0px"><center><i class="fa fa-envelope fa-2x"></i></center><br><center>info@primefort.net</center></a></span>
-                    </center>
-                    </div>
-                </form>
-            
-        </section>
-    </section>
-    <!-- End contact-page Area -->
 
+
+                <section id="contact">
+                    <div class="container contact-form">
+                        <div class="contact-image">
+                            <img src="img/elements/rocket_contact.png" alt="rocket_contact" />
+                        </div>
+                        <form method="post">
+                            <h3>Drop Us a Message</h3>
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                                    </div>
+                                    <div class="form-group">
+
+                                    </div>
+                                    <div class="form-group w3-hide-small w3-hide-medium">
+                                        <span class="w3-hide-small w3-hide-medium"><input type="submit" name="btnSubmit" class="btnContact w3-hide-small w3-hide-medium" value="Send Message" /></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <div class="form-group">
+                                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                                    </div>
+                                    <div class="form-group w3-hide-large">
+                                        <center>
+                                            <input type="submit" name="btnSubmit" class="btnContact w3-center" value="Send" /></center>
+                                    </div>
+                                </div>
+                            </div><br><br><br><br>
+                            <hr><br><br>
+                            <center>
+                                <div class="row">
+                                    
+                                    
+                                <div class="col-sm-4">
+                                    
+                                    <span class="contact-text place w3-hide-small w3-hide-medium" style="color: rgb(0,0,0,0.6);letter-spacing: 0px; display: inline;"><i class="fa fa-map-marker fa-2x" style="text-align: center;"></i>&nbsp;Muthialpet, Pondicherry</span>
+
+                                    
+                                    </div>
+                                    <div class="col-sm-4">
+                                    <span class="contact-text phone w3-hide-small w3-hide-medium"><a href="tel:+91 90471 40793" title="Give us a call" style="color:  rgb(0,0,0,0.6);letter-spacing: 0px"><i class="fa fa-phone fa-2x"></i>&nbsp;&nbsp;+91 90471 40793</a></span>
+                                    
+                                    
+                                    </div>
+                                    <div class="col-sm-4">
+                                    
+                                    <span class="contact-text gmail w3-hide-small w3-hide-medium"><a href="mailto:info@primefort.net" title="Send me an email" style="color:  rgb(0,0,0,0.6);letter-spacing: 0px"><i class="fa fa-envelope fa-2x"></i>&nbsp;&nbsp;info@primefort.net</a></span>
+                                    
+                                    </div>
+                                
+                                
+                                
+                                
+                                </div>
+                                
+                                
+
+                                
+                            </center>
+                        </form>
+
+                    </div>
+
+                </section>
+                <!-- End contact-page Area -->
+            </div>
+        </div>
+    </section>
     <!-- start footer Area -->
     <div class="footer-dark" style="background-color: black;padding-bottom: 10px;padding-top: 10px ">
         <div style="">
             <div class="container">
 
-                <h2 class="text-center" style="font-size:46px;font-weight:bolder; color:white;"><img class="img-fluid" style="max-width: 220px;" src="img/primefort/prime%20fort_White-01.png"></h2>
+                <h2 class="text-center" style="font-size:46px;font-weight:bolder; color:white;"><a href="index.html"><img class="img-fluid" style="max-width: 220px;" src="img/primefort/prime%20fort_White-01.png"></a></h2>
                 <hr />
                 <ul class="list-inline" id="text_decoration" style="margin-top:30px;font-family:ABeeZee, sans-serif;text-align: center;">
                     <li class="list-inline-item"><a href="index.html" class="decoration" style="color:white;font-size:15px;margin-right:10px;">Home</a></li>
                     <li class="list-inline-item"><a href="about.html" style="font-size:15px;color:white;margin-right:10px;">About</a></li>
-                    <li class="list-inline-item"><a href="service.html" style="font-size:15px;color:white;margin-right:10px;">Services</a></li>
+                    <li class="list-inline-item"><a href="#" style="font-size:15px;color:white;margin-right:10px;">Services</a></li>
                     <li class="list-inline-item"><a href="/gallery.html" style="color:white;font-size:15px;margin-right:10px;">Gallery</a></li>
                     <li class="list-inline-item"><a href="/contact.html" style="color:white;font-size:15px;">Contact Us</a></li>
                 </ul>
@@ -239,5 +385,7 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/mail-script.js"></script>
     <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/Navi.css">
+    <script src="js/Navi.js"></script>
 </body>
 	</html>
